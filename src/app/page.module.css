@@ -228,3 +228,9 @@
     transform: rotate(0deg);
   }
 }
+
+.buttonWhiticon {
+  background-color: aqua;
+  width: 150px;
+  height:50px;
+}

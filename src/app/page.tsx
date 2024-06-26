@@ -1,27 +1,17 @@
-import Image from "next/image";
+
+import { ButtonBasic,  InputWrapper } from "@/components/molecules";
 import styles from "./page.module.css";
+
 
 export default function Home() {
   return (
     <main className={styles.main}>
-
-      <div className={styles.grid}>
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div>
+          <h1>Template Next Atomic</h1>
+          <InputWrapper className="containerInputWrapper" inputType="inputSearch" componentProps={{placeholder:'hola en InputSearch'}}/>
+          <InputWrapper className="containerInputWrapper" inputType="inputForm" componentProps={{placeholder:'hola en InputForm'}}/>
+          <ButtonBasic className={styles.buttonWhiticon} title='Click me'/>
+        </div>
     </main>
   );
 }
